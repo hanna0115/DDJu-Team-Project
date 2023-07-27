@@ -33,11 +33,11 @@ footer {
     text-align: center;
 }
 .footer-bottom-item:nth-child(2) {
-    flex-grow: 1;
+    flex-grow: 2;
     padding: 0;
 }
 .footer-bottom-item:nth-child(3) {
-    flex-grow: 5;
+    flex-grow: 3;
 }
 
 
