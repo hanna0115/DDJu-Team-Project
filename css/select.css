@@ -1,0 +1,132 @@
+.select-list {
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    margin: 80px auto 0 auto;
+}
+
+.select-item {
+    width: 180px;
+    height: 200px;
+}
+
+.select-item a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background-color: #ffd9c060;
+    transition: all 500ms ease-in-out;
+}
+
+.select-item a:hover {
+    background-color: #FFD9C0;
+    margin-top: -10px;
+}
+
+.select-item a:hover i,
+.select-item a:hover span {
+    color: #fff;
+}
+
+.select-item a i {
+    color: #666;
+    font-size: 70px;
+    transition: color 300ms ease-in-out;
+}
+
+.select-item a span {
+    margin-top: 30px;
+    color: #333;
+    font-size: 16px;
+    transition: color 300ms ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+.select-list {
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    margin: 80px auto 0 auto;
+}
+
+.select-list li {
+    display: inline-block;
+    width: 180px;
+    height: 200px;
+}
+
+.select-list li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .2);
+    background-position: center 20px;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-color: #faf0d73b;
+    transition: 300ms ease-in-out;
+}
+
+.select-list li:nth-child(1) a {
+    background-image: url(./images/carousel\ \(1\).png);
+}
+
+.select-list li:nth-child(2) a {
+    background-image: url(./images/fireworks.png);
+}
+
+.select-list li:nth-child(3) a {
+    background-image: url(./images/tent.png);
+}
+
+.select-list li:nth-child(4) a {
+    background-image: url(./images/dish.png);
+}
+
+.select-list li a:hover {
+    background-color: #FFD9C0;
+    margin-top: -10px;
+}
+
+.select-list li:nth-child(1) a:hover {
+    background-image: url(./images/carousel-white.png);
+}
+
+.select-list li:nth-child(2) a:hover {
+    background-image: url(./images/fireworks-white.png);
+}
+
+.select-list li:nth-child(3) a:hover {
+    background-image: url(./images/tent-white.png);
+}
+
+.select-list li:nth-child(4) a:hover {
+    background-image: url(./images/dish-white.png);
+}
+
+.select-list li a:hover span {
+    color: #fff;
+}
+
+.select-list li a span {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    color: #333;
+}
