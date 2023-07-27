@@ -41,89 +41,114 @@
 <body>
     <div class="wrapper">
         
-        <header>
-            <nav>
-              <h2 class="visually-hidden">로고, 검색창, 회원가입 및 로그인</h2>
-              <div class="gnb-logo">
-                <a href="./index.html"><img src="./images/Logo2.png" alt="logo" width="100px"></a>
+      <header>
+        <nav>
+          <h2 class="visually-hidden">메뉴</h2>
+          <div class="gnb-logo">
+            <a href="./index.html"><img src="./images/logo2.png" alt="logo" width="100px"></a>
+          </div>
+          <div class="gnb-search">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="#관광지 #맛집" aria-label="Search">
+              <button class="gnb-search-btn btn-outline-success" type="submit">검색</button>
+            </form>
+          </div>
+          <div class="overlay">
+            <div class="login-box">
+              <img src="./images/Logo2.png" alt="">
+              <form action="">
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1">ID</span>
+                  <input type="text" class="form-control" placeholder="아이디를 입력하세요." aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1">PW</span>
+                  <input type="text" class="form-control" placeholder="비밀번호를 입력하세요." aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                <button type="button" class="btn btn-outline-primary">login</button>
+                <button type="button" class="close-btn btn btn-outline-danger">닫기</button>
+              </form>
+            </div>
+          </div>
+          <button type="button" class="open-btn"><i class="fa-solid fa-user"></i></button>
+        </div>
+          
+            <!-- Modal Login  -->
+              <div class="gnb-list-login">
+                <ul class="gnb-list">
+                  <li class="gnb-item"><a href=""><i class="fa-solid fa-bookmark"></i></a></li>
+                  <li class="gnb-item"><a href=""><i class="fa-solid fa-user"></i></a></li>
+                  <li class="gnb-item"><a href=""><i class="fa-solid fa-right-to-bracket"></i></a></li>
+                </ul>
               </div>
-              <div class="gnb-search">
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="#관광지 #맛집" aria-label="Search">
-                  <button class="gnb-search-btn btn-outline-success" type="submit">검색</button>
-                </form>
-              </div>
-              <ul class="gnb-list">
-                <li class="gnb-item"><a href=""><i class="fa-solid fa-bookmark"></i></a></li>
-                <li class="gnb-item"><a href=""><i class="fa-solid fa-user"></i></a></li>
-                <li class="gnb-item"><a href=""><i class="fa-solid fa-right-to-bracket"></i></a></li>
-              </ul>
-            </nav>
-          </header>
+  
+        </nav>
+      </header>
+
 
           <main>
 
-            <div class="circle-wrap">
-                <div class="circle">
-                    <svg viewBox="0 0 100 100" class="rotate-svg">
-                      <path id="circlePath" d="M50,0 A50,50 0 1,1 50,100 A50,50 0 1,1 50,0" fill="none" stroke="none"></path>
-                      <text>
-                        <textPath href="#circlePath" class="rotate-text">노 잼 대전? 함께하는 ♥연애♥ 대전! 대전의 온도</textPath>
-                      </text>
-                    </svg>
-                </div>
+            <!-- circle text -->
+            <div class="rounded-text">
+              <svg viewBox="0 0 200 200">
+                <path id="textPath" d="M 85,0 A 85,85 0 0 1 -85,0 A 85,85 0 0 1 85,0" transform="translate(100,100)"
+                  fill="none"></path>
+                  <text text-anchor="start">
+                    <textPath class="coloring" xlink:href="#textPath" startOffset="0%">노 잼 대전? 함께하는 연애 대전! 대전의 온도 입니다 데이트 코스, 맛집 등 놀거리를 알려드립니다 행복한 데이트를 제공해드립니다
+                    </textPath>
+                  </text>
+              </svg>
             </div>
 
-            <section class="slide-wrapper">
-                <div class="slide-list">
-                  <div class="slide-item">
-                    <img src="./images/캠핑대전.jpg" alt="캠핑대전 이미지">
-                  </div>
-                  <div class="slide-item">
-                    <img src="./images/누들대전.png" alt="누들대전 이미지">
-                  </div>
-                  <div class="slide-item">
-                    <img src="./images/대전0시축제.png" alt="대전0시축제 이미지">
-                  </div>
-                </div>
-                <button class="slide-btn" id="slide-prev" type="button">
-                  <i class="fa-solid fa-chevron-left"></i>
-                </button>
-                <button class="slide-btn" id="slide-next" type="button">
-                  <i class="fa-solid fa-chevron-right"></i>
-                </button>
-                <div id="slide-dots"></div>
-            </section>
 
 
             <section>
-              <ul class="select-list">
-                <li class="select-item">
-                  <a href="">
-                    <i class="fa-solid fa-building"></i>
-                    <span>관광지</span>
-                  </a>
-                </li>
-                <li class="select-item">
-                  <a href="">
-                    <i class="fa-solid fa-wand-magic-sparkles"></i>
-                    <span>축제 공연</span>
-                  </a>
-                </li>
-                <li class="select-item">
-                  <a href="">
-                    <i class="fa-solid fa-bicycle"></i>
-                    <span>레포츠</span>
-                  </a>
-                </li>
-                <li class="select-item">
-                  <a href="">
-                    <i class="fa-solid fa-utensils"></i>
-                    <span>맛집</span>
-                  </a>
-                </li>
-              </ul>
+              <!-- slide image, text -->
+              <div class="slide-wrapper">
+                  <div class="slide-list">
+                    <div class="slide-item">
+                      <div class="slide-text">
+                        <p class="slide-text-title">대전 낭만 캠핑 추천</p>
+                        <p class="slide-text-content">감성과 데이트를 동시에!<br> 취향저격 대전</p>
+                      </div>
+                      <img src="./images/캠핑대전.jpg" alt="캠핑대전이미지">
+                    </div>
+                    <div class="slide-item">
+                      <div class="slide-text">
+                        <p class="slide-text-title">누들에 진심인 연인들 추천</p>
+                        <p class="slide-text-content">푸드존에서 맛보고!<br> 연인과 공연관람까지</p>
+                      </div>
+                      <img src="./images/누들대전.png" alt="누들대전이미지">
+                    </div>
+                    <div class="slide-item">
+                      <div class="slide-text">
+                        <p class="slide-text-title">텐션 높은 연인들 추천</p>
+                        <p class="slide-text-content">올나잇 제로파티 !<br>연인과 함께 대전 여름축제</p>
+                      </div>
+                      <img src="./images/대전0시축제.png" alt="대전0시축제이미지">
+                    </div>
+                  </div>
+              </div>
+
+              <!-- play button -->
+              <div class="play-list-btn">
+                <button type="button">
+                  <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <button type="button">
+                  <i class="fa-solid fa-pause"></i>
+                </button>
+                <button type="button">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+
+              </div>
+              <!-- slide line -->
+              <div class="slide-line"></div>
             </section>
+
+
 
             <section>
               <ul class="select-list">
@@ -153,7 +178,7 @@
 
             <section>
                 
-                코스 들어갈 공간
+                
             
             </section>
 
@@ -161,39 +186,50 @@
 
 
           <footer>
-            <h3 class="hidden"></h3>
+            <h3 class="visually-hidden">하단 메뉴</h3>
             <div class="footer-wrapper">
                 <div class="footer-top">
                     <ul>
-                        <li><a href="./html/agreement.html">이용약관 - 환불정책 포함</a></li>
+                      <li><a href="./html/daejeon.html">대전의 온도</a></li>
+                        <li><a href="./html/agreement.html">이용약관</a></li>
                         <li><a href="./html/personalinfo.html">개인정보취급정책</a></li>
+                        <li><a href="./html/youngage.html">청소년보호정책</a></li>
+                        <li><a href="./html/QA.html">자주 묻는 질문</a></li>
                     </ul>
                 </div>
                 <div class="footer-bottom">
-                    <div class="footer-logo">
+                    <div class="footer-logo footer-bottom-item">
                         <img src="./images/Logo.PNG" alt="logo">
                     </div>
-                    <ul>
+                    <ul class="footer-bottom-item">
                         <li><a href="https://www.hometax.go.kr/websquare/websquare.wq?w2xPath=/ui/pp/index_pp.xml&tmIdx=&tm2lIdx=&tm3lIdx=">사업자등록번호조회</a></li>
-                        <li>공동대표. 꼬타비, 서우, 한나, Kai</li>
-                        <li>(34015) 대전광역시 유성구 테크노 1로 11-3(관평동 1337)</li>
-                        <li>Email. <a href="">temperature@daejeon.kr</a></li>
-                        <li>TEL. <a href="">010-1004-1004</a> (평일) 11:00 ~ 17:00</li>
-                        <p>Copyright ⓒ 대전의 온도. All Rights Reserved.</p>
-                    </ul>
-                    <div class="footer-link">
-                        <span><a href="https://github.com/Ji2unKo"><img src="https://avatars.githubusercontent.com/u/132882429?v=4" alt="꼬타비"></a></span>
-                        <span><a href="https://github.com/choiseowu"><img src="https://avatars.githubusercontent.com/u/132882346?v=4" alt="서우"></a></span>
+                        <li>공동대표&#46; 꼬타비&#44; 서우&#44; 한나&#44; Kai</li>
+                        <li>&#40;34015&#41; 대전광역시 유성구 테크노 1로 11-3&#40;관평동 1337&#41;</li>
+                        <li>Email&#46; <a href="">temperature@daejeon.kr</a></li>
+                        <li>TEL&#46; <a href="">010&#45;1004&#45;1004</a> &#40;평일&#41; 11&#58;00 &#126; 17&#58;00</li>
                         <br>
+                        <p>Copyright &#169; 대전의 온도&#46; All Rights Reserved&#46;</p>
+                    </ul>
+                    <div class="footer-link footer-bottom-item">
+                      <div class="two-balls">
+                        <span class="pink"><a href="https://github.com/Ji2unKo"><img src="https://avatars.githubusercontent.com/u/132882429?v=4" alt="꼬타비"></a></span>
+                        <span class="blue"><a href="https://github.com/choiseowu"><img src="https://avatars.githubusercontent.com/u/132882346?v=4" alt="서우"></a></span>
+                      </div>
+                        <br>
+                      <div class="bounce">
                         <span><a href="https://github.com/hanna0115"><img src="https://avatars.githubusercontent.com/u/132882278?v=4" alt="한나"></a></span>
+                      </div>
+                      <div class="bounce2">
                         <span><a href="https://github.com/biabamroi"><img src="https://avatars.githubusercontent.com/u/132882475?v=4" alt="Kai"></a></span>
+                        
+                      </div>
                     </div>
                 </div>
             </div>
         </footer>
 
         <aside></aside>
-        <div class="overlay"></div>
+        <div class="overlay2"></div>
 
         
 
