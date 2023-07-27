@@ -17,3 +17,8 @@ button {
     border: none;
     background-color: transparent;
 }
+
+.visually-hidden {
+    display: none;
+}
+
