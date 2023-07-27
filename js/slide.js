@@ -1,9 +1,6 @@
 let cur = 0;
 let len = $('.slide-item').length;
 
-for(i = 0; i < len; i++){
-  $('#slide-dots').append('<div></div>');
-}
 
 function sliding(dir){
   cur = cur + dir;
@@ -25,9 +22,6 @@ function sliding(dir){
       opacity : 1
     }, 600)
   });
-
-  $('#slide-dots div').removeClass('is-active');
-  $('#slide-dots div').eq(cur).addClass('is-active');
 }
 
 sliding(0)
@@ -36,9 +30,3 @@ $('#slide-prev').click(function(){sliding(-1)});
 $('#slide-next').click(function(){sliding(1)});
 
 let auto = setInterval(sliding, 5000, 1);
-
-$('#slide-dots div').click(function(){
-  cur = 0;
-  let num = $(this).index()
-  sliding(num);
-})
