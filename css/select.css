@@ -1,3 +1,8 @@
+.select-wrap {
+    /* slide가 포지션을 먹고 있어서 필요한 여백 */
+    margin-top: 200px;
+}
+
 .select-list {
     display: flex;
     justify-content: space-between;

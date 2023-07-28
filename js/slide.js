@@ -24,7 +24,7 @@ function sliding(dir){
   });
 }
 
-sliding(0)
+sliding(0);
 
 $('#slide-prev').click(function(){sliding(-1)});
 $('#slide-next').click(function(){sliding(1)});

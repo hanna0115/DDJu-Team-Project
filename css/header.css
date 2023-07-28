@@ -10,7 +10,7 @@ header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     padding: 10px;
     /* 글자체 자리 */
@@ -36,7 +36,9 @@ header nav {
     left: 50%;
     transform: translate(-50%);
     display: block;
-    width: 500px;  
+    width: 500px; 
+    /* 우선 순위 */
+    z-index: 200; 
 }
   
 .gnb-search-btn {
@@ -60,7 +62,8 @@ header nav {
     padding: 30px;
     background-color: rgba(0, 0, 0, .5);
     transition: all 500ms ease-in-out;
-    z-index: 100;
+    /* 우선 순위 */
+    z-index: 1000;
 }
 
 .overlay.is-open {

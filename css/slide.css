@@ -1,6 +1,8 @@
 .slide-wrapper {
     width: 100vw;
     height: 450px;
+    /* header와의 간격 */
+    padding-top: 50px;
     background-color: #FAF0D7;
 }
 
